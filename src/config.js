@@ -14,7 +14,7 @@ export const analytics = {
 
 export const common = {
   api: {
-    URL: 'http://localhost:3000', // production code-push-server address
-    devURL: 'http://localhost:3000', // development code-push-server address
+    URL: process.env.PRO_SERVER || 'http://192.168.0.25:3006', // production code-push-server address
+    devURL: process.env.DEV_SERVER || 'http://192.168.0.25:3006', // development code-push-server address
   },
 };
